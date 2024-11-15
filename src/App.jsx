@@ -6,12 +6,12 @@ import Experience from './components/experience/Experience'
 import Myprojects from './components/myprojects/Myprojects'
 import Contacts from './components/contacts/Contacts'
 import Footer from './components/footer/Footer'
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 const App = () => {
   return (
     
-    <BrowserRouter basename="portfolio>">
+    <HashRouter>
 
         <Header/>
         <Nav/>
@@ -21,7 +21,7 @@ const App = () => {
         <Contacts/>
         <Footer/>
 
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

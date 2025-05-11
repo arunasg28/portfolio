@@ -1,0 +1,122 @@
+h2{
+    color: var(--color-primary);
+}
+
+header{
+
+    height: 100vh;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+.header__container{
+
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* Applying CSS for My image */
+
+.me{
+    width: 22rem;
+    height: 20rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 1rem;  
+    padding: 5rem 1.5rem 1.5rem ,5rem;
+}
+
+.me > img{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    margin-left: 3rem;
+    
+}
+
+/* Applying CSS for CTA */
+
+.cta{
+
+    margin-top: 20rem;  /*to push buttons littlebit down*/
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    
+}
+.btn{
+    border-radius: 10px,10px,10px,10px;
+}
+
+/* Applying CSS for HeaderSocials */
+
+.header__socials{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after{
+
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+
+/* Applying CSS for Scroll Down */
+
+.scroll__down{
+
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* Media queries for medium devices(Tablets) */
+
+@media screen and (max-width: 1024px) {
+
+    header{
+
+        height: 100vh;
+    }
+    
+
+}
+
+/* Media queries for small devices(Mobiles) */
+
+@media screen and (max-width: 600px) {
+
+    header{
+
+        height: 100vh;
+    }
+
+
+    .me > img{
+
+        margin-top: 1rem;
+    }
+    .header__socials{
+        display: none;
+        
+    }
+    .scroll__down{
+        display: none;  
+    }
+    
+}
+
+
+
